@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print the string in the put function
  *
- * Return: Always 0 (Sucess)
+ * Return: 0
  */
 int main(void)
 {
@@ -18,5 +18,5 @@ int main(void)
 	printf("Size of a long int: %ld byte(s)\n", sizeof(li));
 	printf("Size of a long long int: %ld byte(s)\n" sizeof(lli));
 	printf("Size of a float: %ld byte(s)\n", sizeof(f));
-	return (0)
+	return (0);
 }
