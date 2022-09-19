@@ -1,28 +1,22 @@
 #include "main"
 /**
  * rev_string - reverse the string
+ * followed by a new line.
  * @s: pointer to string
- *
  * Return: void
  */
 void rev_string(char *s)
 {
-	int i, j, k, temp;
+	int len = 0, i = 0;
+	char aux;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	k = 0;
-	j = i - 1;
+	while (s[len] != '\0')
+		len++;
 
-	while (k < j)
+	while (i < len--)
 	{
-		temp = s[k];
-		s[k] = s[j];
-		s[j] = temp;
-		k++;
-		j--;
+		aux = s[i];
+		s[i++] = s[len];
+		s[len] = aux;
 	}
 }
