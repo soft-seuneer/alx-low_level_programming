@@ -9,12 +9,11 @@
  * Return: void
  */
 
-void int_swap(int *a)
-void int_swap(int *b)
+void Swap(int *a, int *b)
 {
 	int c;
 
 	c = *a;
-	*b = c;
 	*a = *b;
+	*b = c;
 }
