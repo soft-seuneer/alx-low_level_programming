@@ -1,22 +1,28 @@
-#include "main"
+#include "main.h"
+
 /**
- * rev_string - reverse the string
- * followed by a new line.
- * @s: pointer to string
- * Return: void
+ * rev_string - rev string
+ * @s: string
  */
+
 void rev_string(char *s)
 {
-	int len = 0, i = 0;
-	char aux;
+	char *t = s;
+	char n[1000];
+	short c = 0;
 
-	while (s[len] != '\0')
-		len++;
-
-	while (i < len--)
+	while (*s != '\0')
 	{
-		aux = s[i];
-		s[i++] = s[len];
-		s[len] = aux;
+		n[c] = *s;
+		s++;
+		c++;
+	}
+	c = 0;
+
+	while (s > t)
+	{
+		s--;
+		*s = n[c];
+		c++;
 	}
 }
