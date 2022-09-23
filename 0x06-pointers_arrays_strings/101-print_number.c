@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -20,4 +20,4 @@ void print_number(int n)
 		print_number(num / 10);
 
 	_putchar((num % 10) + '0');
-}
+i}
